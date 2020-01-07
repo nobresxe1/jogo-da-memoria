@@ -1,3 +1,5 @@
+const $root = document.querySelector("#root")
+
 function createMemoryCard() {
     const $memoryCard = document.createElement("article");
 
@@ -10,4 +12,19 @@ function createMemoryCard() {
     $root.insertBefore($memoryCard, null)
 
     $memoryCard.insertAdjacentHTML('afterbegin', $icon);
+}
+
+function createMemoryCardFront() {
+    const $memoryCardFront = document.createElement("article")
+    const $iconC =
+        `<img src='img/icon-c.png' 
+    alt='Icone de um livro da liguagem c++'
+    class='icon'/>`;
+
+    $memoryCardFront.classList.add("memory-card")
+    $memoryCardFront.classList.add("-front")
+    $root.insertBefore($memoryCardFront, null)
+
+
+    $memoryCardFront.insertAdjacentHTML('afterbegin', $iconC)
 }
