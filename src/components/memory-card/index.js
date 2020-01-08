@@ -1,5 +1,3 @@
-const $root = document.querySelector("#root")
-
 function createMemoryCard() {
     const $memoryCard = document.createElement("article");
 
@@ -9,7 +7,7 @@ function createMemoryCard() {
      class='icon' />`;
 
     $memoryCard.classList.add("memory-card")
-    $root.insertBefore($memoryCard, null)
+    $wrapCards.insertBefore($memoryCard, null)
 
     $memoryCard.insertAdjacentHTML('afterbegin', $icon);
 }
@@ -23,7 +21,7 @@ function createMemoryCardFront() {
 
     $memoryCardFront.classList.add("memory-card")
     $memoryCardFront.classList.add("-front")
-    $root.insertBefore($memoryCardFront, null)
+    $wrapCards.insertBefore($memoryCardFront, null)
 
 
     $memoryCardFront.insertAdjacentHTML('afterbegin', $iconC)
