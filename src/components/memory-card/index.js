@@ -1,28 +1,24 @@
 function createMemoryCard() {
-    const $memoryCard = document.createElement("article");
+    const $memoryCard = `
+    <article class = "memory-card">
+        <img src='img/icon-collabcode.png'
+        alt='Gueio mascote da Collabcode'
+        class='icon'/>
+    </article>`;
 
-    const $icon =
-        `<img src='img/icon-collabcode.png'
-     alt='Gueio mascote da Collabcode'
-     class='icon' />`;
-
-    $memoryCard.classList.add("memory-card")
-    $wrapCards.insertBefore($memoryCard, null)
-
-    $memoryCard.insertAdjacentHTML('afterbegin', $icon);
+    return $memoryCard;
 }
 
+
+
 function createMemoryCardFront() {
-    const $memoryCardFront = document.createElement("article")
-    const $iconC =
-        `<img src='img/icon-c.png' 
-    alt='Icone de um livro da liguagem c++'
-    class='icon'/>`;
+    const $memoryCard = `
+    <article class = "memory-card -front">
+        <img src='img/icon-c.png' 
+        alt='Icone de um livro da liguagem c++'
+        class='icon'/>
+    </article>`;
 
-    $memoryCardFront.classList.add("memory-card")
-    $memoryCardFront.classList.add("-front")
-    $wrapCards.insertBefore($memoryCardFront, null)
+    return $memoryCard;
 
-
-    $memoryCardFront.insertAdjacentHTML('afterbegin', $iconC)
 }

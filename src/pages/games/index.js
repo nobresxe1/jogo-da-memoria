@@ -1,8 +1,3 @@
-createMemoryCard();
-createMemoryCard();
-createMemoryCard();
-createMemoryCard();
-createMemoryCard();
-createMemoryCard();
-createMemoryCardFront();
-createMemoryCardFront();
+const memoryCard = createMemoryCard();
+
+const memoryCardFront = createMemoryCardFront();
