@@ -1,6 +1,6 @@
-const $root = document.querySelector("#root")
-const $wrapCards = document.createElement("section")
+function createCardsWrapper() {
+    const $cardsWrapper = `
+<section class="cards-wrapper"></section>
 
-$wrapCards.classList.add("wrap-cards");
-
-$root.insertBefore($wrapCards, null);
+`;
+}
