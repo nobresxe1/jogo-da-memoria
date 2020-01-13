@@ -1,3 +1,7 @@
-const memoryCard = createMemoryCard();
+const $root = document.querySelector("#root")
 
-const memoryCardFront = createMemoryCardFront();
+const $cardsWrapper = createCardsWrapper();
+const $memoryCard = createMemoryCard();
+const $memoryCardFront = createMemoryCardFront();
+
+$root.insertAdjacentHTML("beforeend", $cardsWrapper)
