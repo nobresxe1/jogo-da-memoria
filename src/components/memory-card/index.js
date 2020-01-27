@@ -1,7 +1,7 @@
-const createMemoryCard = (src, alt, nameClass) => `
-        <article class = "memory-card ${nameClass}">
-            <img src='${src}'
-            alt="${alt}" 
+const createMemoryCard = card => `
+        <article class = "memory-card ${card.nameClass}">
+            <img src='${card.src}'
+            alt="${card.alt}" 
             class='icon'
             onclick = 'handleClick()'/>
         </article>
@@ -15,6 +15,7 @@ const createMemoryCard = (src, alt, nameClass) => `
 //         onclick='handleClick()'/>
 //     </article>`;
 // foi usado IF ternario
+// parei na aula 26-6
 
 
 
