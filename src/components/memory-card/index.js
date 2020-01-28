@@ -1,11 +1,13 @@
-const createMemoryCard = card => `
-        <article class = "memory-card ${card.nameClass}">
-            <img src='${card.src}'
-            alt="${card.alt}" 
-            class='icon'
-            onclick = 'handleClick()'/>
-        </article>
-        `
+const createMemoryCard = ({ alt, src, nameClass }) =>
+    `
+        <article class = "memory-card ${nameClass}">
+            <img 
+                src='${src}'
+                alt="${alt}" 
+                class='icon'
+                onclick = 'handleClick()'
+            />
+        </article> `
 
 // const createMemoryCardFront = () => `
 //     <article class = "memory-card -front">
@@ -15,7 +17,8 @@ const createMemoryCard = card => `
 //         onclick='handleClick()'/>
 //     </article>`;
 // foi usado IF ternario
-// parei na aula 26-6
+// parei na aula 27
+
 
 
 
