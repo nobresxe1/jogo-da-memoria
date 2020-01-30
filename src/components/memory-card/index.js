@@ -42,7 +42,7 @@ const createMemoryCard = ({ alt, src, nameClass }) => {
     $head.insertBefore($style, null)
 
 
-    return `
+    return ({ src, alt, nameClass }) => `
         <article class = "memory-card ${nameClass}">
             <img 
                 src='${src}'
