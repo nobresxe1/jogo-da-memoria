@@ -51,6 +51,14 @@ const memoryCard = () => {
                 onclick = 'handleClick()'
             />
         </article> 
+        <article class = "memory-card">
+            <img 
+                src="img/icon-collabcode.png"
+                alt="Gueio mascote da Collabcode" 
+                class='icon'
+                onclick = 'handleClick()'
+            />
+        </article> 
     `;
 
 }

@@ -4,10 +4,11 @@ const $cardsWrapper = createCardsWrapper();
 
 const createMemoryCard = memoryCard()
 
-const $memoryCard = createMemoryCard({
-    src: "img/icon-collabcode.png",
-    alt: "Gueio mascote da Collabcode"
-});
+// const $memoryCard = createMemoryCard({
+//     src: "img/icon-c.png",
+//     alt: "Icone de um livro da liguagem c++",
+//     nameClass: "-front"
+// });
 const $memoryCardC = createMemoryCard({
     src: "img/icon-c.png",
     alt: "Icone de um livro da liguagem c++",
@@ -31,13 +32,13 @@ const $memoryCardSettings = createMemoryCard({
 });
 
 
-$cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard);
+// $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard);
 $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardC);
-$cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard);
+// $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard);
 $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardBug)
-$cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard);
+    // $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard);
 $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardCelular);
-$cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard);
+// $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard);
 $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardSettings);
 
 
