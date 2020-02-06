@@ -3,7 +3,7 @@ const memoryCard = () => {
     const $style = document.createElement('style');
 
     $style.textContent = `
-            div{
+            .memory-card {
                 width: 155px;
                 height: 155px;
                 position: relative;
@@ -22,13 +22,21 @@ const memoryCard = () => {
                 position: absolute;
                 display: none;
             }
+
+            .memory-card .-active .card{
+                display: none;
+            }
+            .memory-card .-active .card .-front{
+                display: flex;
+            }
             
             .memory-card .card.-front {
                 background-color: #fff;
-                display: block;
+                display: flex;
+
             }
             
-            .memory-card .card .-front::before {
+            .memory-card .card.-front::before {
                 content: "";
                 width: 95px;
                 height: 95px;
@@ -46,12 +54,13 @@ const memoryCard = () => {
                 position: absolute;
                 transform: translateY(-12px);
             }
+            
         `
     $head.insertBefore($style, null)
 
 
     return ({ alt, src, nameClass }) => `
-    <div class = "memory-card"> 
+    <div class = "memory-card -active"> 
         <article class = "card -front">
             <img 
                 src='${src}'
