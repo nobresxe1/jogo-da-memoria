@@ -20,13 +20,12 @@ const memoryCard = () => {
                 position: relative;
                 cursor: pointer;
                 position: absolute;
-                display: none;
             }
 
-            .memory-card .-active .card{
+            .memory-card.-active .card{
                 display: none;
             }
-            .memory-card .-active .card .-front{
+            .memory-card.-active .card .-front{
                 display: flex;
             }
             
@@ -60,21 +59,19 @@ const memoryCard = () => {
 
 
     return ({ alt, src, nameClass }) => `
-    <div class = "memory-card -active"> 
+    <div class = "memory-card" onclick = 'handleClick(this)'> 
         <article class = "card -front">
             <img 
                 src='${src}'
                 alt="${alt}" 
-                class='icon'
-                onclick = 'handleClick()'
+                class='icon'                
             />
         </article> 
         <article class = "card">
             <img 
                 src="img/icon-collabcode.png"
                 alt="Gueio mascote da Collabcode" 
-                class='icon'
-                onclick = 'handleClick()'
+                class='icon'               
             />
         </article> 
     </div>
@@ -82,7 +79,9 @@ const memoryCard = () => {
 
 }
 
-const handleClick = () => console.log("ae")
+const handleClick = $component => {
+        $component.classList.toggle("-active")
+    }
     // const createMemoryCardFront = () => `
     //     <article class = "memory-card -front">
     //         <img src='img/icon-c.png' 
