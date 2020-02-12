@@ -50,4 +50,4 @@ $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardSettings);
 
 
 
-$root.insertAdjacentElement("beforeend", $cardsWrapper)
+$root.insertAdjacentElement('beforeend', $cardsWrapper);

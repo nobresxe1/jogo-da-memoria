@@ -90,4 +90,5 @@ const handleClick = $component => {
     //         onclick='handleClick()'/>
     //     </article>`;
     // foi usado IF ternario
-    // parei na aula 27
+
+//desafio colocar temporizador nas cartas, e não virar mais que 2 de uma vez
